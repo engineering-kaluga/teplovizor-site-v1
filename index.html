@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Тепловизор в Калуге</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+  <header>
+    <div class="nav">
+      <ul>
+        <li> <a href="#Price">Цены </a></li>
+        <li><a href="#Rent">Аренда</a></li>
+        <li> <a href="#Order">Заказать</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="hello">
+      <div class="main-title">
+        <p class="big-text-title">Тепловизор в калуге</p>
+      </div>
+      <div class="hello-text">
+        <p class="main-text">Устали переплачивать за отопление? Предлагаем Вам воспользоваться услугами обследования помещений тепловизором. С нашей помощью Вы обнаружите ошибки в теплоизоляции помещений и в установке окон и дверей.</p>
+      </div>
+    </div>
+    <div class="half-columns" id="Price">
+      <div class="house"> 
+        <div class="centered">
+          <p class="text-title">Дом</p>
+        </div>
+        <div class="table-description">
+          <p class="text">Стоимость услуг для жилых домов:</p>
+        </div>
+        <div class="table-wrap">
+          <div class="table">
+            <div class="table-header">
+              <div class="cell">Площадь</div>
+              <div class="cell">Цена*</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">до 100 м2</div>
+              <div class="cell">4500 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">до 200 м2</div>
+              <div class="cell">6000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">до 300 м2</div>
+              <div class="cell">8000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">до 400 м2</div>
+              <div class="cell">10000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">до 500 м2</div>
+              <div class="cell">12000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">свыше 500 м2</div>
+              <div class="cell">цена договорная</div>
+            </div>
+          </div>
+        </div>
+        <p class="small-text">*В пределах 50 км от Калуги, свыше 25 р/км.</p>
+        <div class="button-wrap">
+          <div class="button-order"><a href="#Order">Заказать</a></div>
+        </div>
+      </div>
+      <div class="appartment"> 
+        <div class="centered">
+          <p class="text-title">Квартира</p>
+        </div>
+        <div class="table-description">
+          <p class="text">Стоимость обследования квартир:</p>
+        </div>
+        <div class="table-wrap">
+          <div class="table">
+            <div class="table-header">
+              <div class="cell">Квартира</div>
+              <div class="cell">Цена*</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">студия</div>
+              <div class="cell">1500 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">1-комн.</div>
+              <div class="cell">2000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">2-комн.</div>
+              <div class="cell">2500 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">3-комн.</div>
+              <div class="cell">3000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">4-комн.</div>
+              <div class="cell">4000 р</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">свыше</div>
+              <div class="cell">цена договорная</div>
+            </div>
+          </div>
+        </div>
+        <p class="small-text">*В пределах Калуги, свыше 25 р/км.</p>
+        <div class="button-wrap">
+          <div class="button-order"><a href="#Order">Заказать</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="rent" id="Rent">
+      <div class="centered">
+        <p class="text-title">Аренда</p>
+      </div>
+      <div class="flex-wrap">
+        <div class="column-half">
+          <p class="text">В случае если Вы хотите самостоятельно исследовать с помощью тепловизора интересущющий Вас объект, то Вы можете воспользоваться услугой аренды оборудования.</p>
+          <p class="text">Стоимость аренды составляет 500 р/сутки. Обязателен залог в размере 15 000 р.</p>
+        </div>
+        <div class="column-half">
+          <p class="text">Если Вы хотите взять оборудование в аренду заполните, пожалуйста, форму:</p>
+          <!--Форма-->
+          <div class="centered">
+            <form method="Post" action="https://formspree.io/engineering.kaluga@gmail.com">
+              <label>Ваше имя:<span>
+                  <input type="text" name="name"></span></label>
+              <label>Ваши контакты:<span>
+                  <input type="text" name="replyContacts"></span></label>
+              <label>Ваше сообщение:<span>
+                  <textarea name="message"></textarea></span></label>
+              <div class="button-wrap">
+                <label>
+                  <input class="button-send-order" type="submit" value="Отправить заявку">
+                </label>
+              </div>
+            </form>
+          </div>
+          <p class="text">Также Вы можете связаться с нами <br> по тел.: 8(903)811-84-05.</p>
+        </div>
+      </div>
+    </div>
+    <div class="order" id="Order">
+      <div class="centered">
+        <p class="text-title">Заказать</p>
+      </div>
+      <div class="order-wrap">
+        <p class="text">Для заказа тепловизионного обследования заполните форму:</p>
+        <div class="centered">
+          <form method="Post" action="https://formspree.io/engineering.kaluga@gmail.com">
+            <label>Ваше имя:<span>
+                <input type="text" name="name"></span></label>
+            <label>Ваши контакты:<span>
+                <input type="text" name="replyContacts"></span></label>
+            <label>Ваше сообщение:<span>
+                <textarea name="message"></textarea></span></label>
+            <div class="button-wrap">
+              <label>
+                <input class="button-send-order" type="submit" value="Отправить заявку">
+              </label>
+            </div>
+          </form>
+        </div>
+        <p class="text">Также Вы можете связаться с нами по тел.: 8(903)811-84-05</p>
+        <p class="text">К Вашему сведению нестандартные работы оплачиваются исходя из стоимости 1500 р/час в пределах Калуги, дальше 25 р/км.</p>
+      </div>
+    </div>
+  </body>
+</html>

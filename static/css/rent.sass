@@ -1,0 +1,62 @@
+.flex-wrap
+  display: flex
+  flex-direction: row
+
+.column-half
+  width: 50%
+  padding: 40px
+  padding-bottom: 0px
+
+.column-half
+  p.text
+    padding-bottom: 30px
+    text-shadow: 1px 1px 2px black
+
+.button-send-order
+  display: flex
+  background: white
+  margin: 0px 0px 20px 0px 
+  width: auto
+  padding: 0px 10px
+  height: 50px
+  justify-content: center
+  align-items: center
+  border-radius: 0px
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.3)
+  cursor: pointer
+
+input.button-send-order
+  text-decoration: none
+  font-size: 32px
+  color: black
+  margin-left: 10px
+  margin-right: 10px
+  border: 0px
+  margin-top: 20px
+
+.button-send-order:hover
+  background: darken(white,10)
+
+label, span
+  display: block
+  font-size: 18px
+  color: white
+  text-shadow: 1px 1px 2px black
+
+form
+  width: 90%
+
+  label
+    padding-bottom: 10px
+
+    input, textarea
+      padding: 2px
+      width: 100%
+      border: 2px solid black
+
+      &:focus
+        outline: none
+        border-color: grey
+
+    textarea
+      height: 10em
