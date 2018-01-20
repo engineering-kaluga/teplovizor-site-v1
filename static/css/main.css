@@ -402,14 +402,16 @@ header {
 
 .nav {
   margin-right: 120px;
+  width: 100%;
   display: flex;
-  justify-content: right; }
+  flex-direction: row;
+  justify-content: flex-end; }
   .nav ul {
     list-style: none;
     margin-top: 0; }
     .nav ul li {
       padding: 20px;
-      display: inline; }
+      display: inline-block; }
       .nav ul li a {
         text-decoration: none;
         color: white;
@@ -417,11 +419,13 @@ header {
       .nav ul li a:hover {
         color: black; }
     .nav ul li:last-child {
-      padding-right: 0px; }
+      padding-right: 40px; }
 
 .hello {
-  height: 720px;
-  display: block;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   background-color: #73c6fb;
   background-image: linear-gradient(to bottom, rgba(115, 198, 251, 0.8) 0%, rgba(115, 198, 251, 0.8) 100%), url("/static/img/house1.jpg");
@@ -484,7 +488,9 @@ header {
 .hello-text {
   max-width: 800px;
   padding-right: 80px;
-  float: right;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  align-self: flex-end;
   margin: 0; }
 
 .main-text {
@@ -570,10 +576,13 @@ header {
   background: #e6e6e6; }
 
 .flex-wrap {
+  position: relative;
   display: flex;
   flex-direction: row; }
 
 .column-half {
+  position: relative;
+  display: block;
   width: 50%;
   padding: 40px;
   padding-bottom: 0px; }
@@ -638,3 +647,75 @@ form {
   text-shadow: 1px 1px 2px black;
   padding-left: 80px;
   padding-right: 80px; }
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    margin-right: 0px;
+    justify-content: center; }
+    .nav ul {
+      padding-left: 0px; }
+      .nav ul li {
+        padding: 10px 10px; }
+        .nav ul li:last-child {
+          padding-right: 10px; }
+        .nav ul li a {
+          font-size: 18px; }
+
+  .hello .main-title {
+    padding-left: 20px; }
+  .hello .big-text-title {
+    font-size: 48px;
+    padding-right: 20px;
+    text-align: center; }
+  .hello .hello-text {
+    padding: 20px; }
+  .hello .main-text {
+    font-size: 24px; }
+
+  .half-columns {
+    flex-direction: column; }
+    .half-columns .house, .half-columns .appartment {
+      width: 100%; }
+
+  .text-title {
+    font-size: 24px; }
+
+  .text {
+    font-size: 18px; }
+
+  .small-text {
+    font-size: 14px; }
+
+  .table {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .table-row, .table-header {
+    font-size: 18px; }
+
+  .flex-wrap {
+    flex-direction: column;
+    align-items: center; }
+
+  .column-half {
+    width: 100%;
+    display: block;
+    padding: 20px 0px 0px 0px; }
+    .column-half p.text {
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .column-half p.text:last-child {
+      padding-bottom: 20px; }
+
+  form {
+    padding-top: 10px; }
+
+  .order .order-wrap {
+    padding: 20px 0px; }
+  .order .text {
+    padding: 0px 10px; }
+    .order .text:nth-child(1) {
+      padding-bottom: 20px; }
+  .order form {
+    width: 90%; } }
