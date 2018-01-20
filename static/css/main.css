@@ -664,13 +664,13 @@ form {
   .hello .main-title {
     padding-left: 20px; }
   .hello .big-text-title {
-    font-size: 48px;
+    font-size: 56px;
     padding-right: 20px;
     text-align: center; }
   .hello .hello-text {
     padding: 20px; }
   .hello .main-text {
-    font-size: 24px; }
+    font-size: 40px; }
 
   .half-columns {
     flex-direction: column; }
@@ -719,3 +719,14 @@ form {
       padding-bottom: 20px; }
   .order form {
     width: 90%; } }
+@media only screen and (max-width: 480px) {
+  .hello .main-title {
+    padding-left: 20px; }
+  .hello .big-text-title {
+    font-size: 48px;
+    padding-right: 20px;
+    text-align: center; }
+  .hello .hello-text {
+    padding: 20px; }
+  .hello .main-text {
+    font-size: 24px; } }
