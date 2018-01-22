@@ -575,6 +575,9 @@ header {
 .button-order:hover {
   background: #e6e6e6; }
 
+.align-right {
+  text-align: right; }
+
 .flex-wrap {
   position: relative;
   display: flex;
