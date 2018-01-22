@@ -14,8 +14,10 @@ function getCurrentPosition() {
 
 buttons.forEach(button =>
   button.addEventListener("click", event => {
+    event.preventDefault();
+
     var targetOffset = document.getElementById(event.target.hash.substr(1))
-      .offsetTop;
+    .offsetTop;
     var windowHeight = window.innerHeight;
     var bodyHeight = document.body.scrollHeight;
 
@@ -30,8 +32,8 @@ buttons.forEach(button =>
     window.setTimeout(() => {
       document.body.removeAttribute("style");
       window.scrollTo(0, targetOffset);
+      window.location.hash = event.target.hash.substr(1);
     }, animationTime);
-
-    event.preventDefault();
+     
   })
 );
