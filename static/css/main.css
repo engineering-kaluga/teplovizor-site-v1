@@ -726,10 +726,25 @@ form {
   .hello .main-title {
     padding-left: 20px; }
   .hello .big-text-title {
-    font-size: 48px;
+    font-size: 42px;
     padding-right: 20px;
     text-align: center; }
   .hello .hello-text {
     padding: 20px; }
   .hello .main-text {
+    font-size: 22px; }
+
+  .button-order a {
+    font-size: 28px; }
+
+  input.button-send-order {
+    font-size: 28px; } }
+@media only screen and (max-width: 320px) {
+  .hello .big-text-title {
+    font-size: 32px; }
+
+  .button-order a {
+    font-size: 24px; }
+
+  input.button-send-order {
     font-size: 24px; } }
