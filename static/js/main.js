@@ -5,7 +5,7 @@
 
 // Enter your JS code here.
 
-const buttons = document.querySelectorAll(".nav ul li a");
+const buttons = document.querySelectorAll([".nav ul li a",".button-order"]);
 const animationTime = 500;
 
 function getCurrentPosition() {
@@ -26,7 +26,7 @@ buttons.forEach(button =>
         ? bodyHeight - windowHeight - getCurrentPosition()
         : targetOffset - getCurrentPosition();
 
-    document.body.style.transition = "transform " + animationTime + "ms ease";
+    document.body.style.transition = "transform " + animationTime + "ms ease-in-out";
     document.body.style.transform = "translate(0, -" + scrollValue + "px)";
 
     window.setTimeout(() => {
