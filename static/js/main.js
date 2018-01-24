@@ -23,7 +23,7 @@ buttons.forEach(button =>
 
     var scrollValue =
       bodyHeight - targetOffset < windowHeight
-        ? bodyHeight - windowHeight
+        ? bodyHeight - windowHeight - getCurrentPosition()
         : targetOffset - getCurrentPosition();
 
     document.body.style.transition = "transform " + animationTime + "ms ease";
