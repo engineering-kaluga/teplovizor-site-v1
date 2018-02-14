@@ -664,6 +664,18 @@ form {
   padding-left: 80px;
   padding-right: 80px; }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+  padding: 50px 8% 0px 8%; }
+  .footer a {
+    color: white; }
+  .footer p {
+    margin: 0; }
+
 @media only screen and (max-width: 768px) {
   .nav {
     margin-right: 0px;
