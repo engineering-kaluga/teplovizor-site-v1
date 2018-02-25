@@ -417,6 +417,8 @@ header {
         font-size: 32px; }
       .nav ul li a:hover {
         color: black; }
+      .nav ul li.rent-li {
+        display: none; }
     .nav ul li:last-child {
       padding-right: 40px; }
 
@@ -456,7 +458,7 @@ header {
 
 .rent {
   height: auto;
-  display: block;
+  display: none;
   position: relative;
   background-color: #45db93;
   background-image: linear-gradient(to bottom, rgba(69, 219, 147, 0.8) 0%, rgba(69, 219, 147, 0.8) 100%), url("/static/img/boxes.jpeg");
